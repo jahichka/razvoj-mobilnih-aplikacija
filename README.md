@@ -1,1 +1,0 @@
-# razvoj-mobilnih-aplikacija
