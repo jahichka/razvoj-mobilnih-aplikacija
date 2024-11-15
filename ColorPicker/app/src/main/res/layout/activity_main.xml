@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16px">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Biranje boja"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/redLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="40dp"
+        android:text="Crvena: 0" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redLabel"
+        android:layout_marginTop="11dp"
+        android:progressTint="#FF0000"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/greenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="95dp"
+        android:text="Zelena: 0" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenLabel"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progressTint="#00FF00" />
+
+    <TextView
+        android:id="@+id/blueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="160dp"
+        android:text="Plava: 0" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueLabel"
+        android:layout_marginTop="18dp"
+        android:progressTint="#0000FF"
+        android:max="255" />
+
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="163dp"
+        android:layout_height="153dp"
+        android:layout_below="@id/blueSeekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/hexColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorPreview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Izabrana boja je #000000" />
+</RelativeLayout>
